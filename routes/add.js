@@ -13,6 +13,7 @@ exports.addFriend = function(req, res) { 
 	data.friends.push(newFriend);
 	console.log(newFriend);
 	console.log(data);
-	res.render('index.handlebars')
+	res.render('index', 
+		data);
 
  }

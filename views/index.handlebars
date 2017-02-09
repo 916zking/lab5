@@ -9,12 +9,14 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
 	<link href="css/hci-friends.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 </head>
 
 <body>
 	<h1>My HCI Friends</h1>
 
+	<div class="JSON List">
 	{{#each friends}}
 		<div class="friend">
 			<img src="{{imageURL}}" ... / class="img-responsive" class="img-rounded">
@@ -25,6 +27,7 @@
 			<hr></hr>
 		</div>
 	{{/each}}
+	</div>
 
 	<form id="addFriendForm" role="form" method="get" action="/add">
 		<h3>Add a friend</h3>
